@@ -40,7 +40,7 @@ const MainForm = () => {
         <div className="px-3 py-4 shadow bg-white text-dark border rounded row">
             <form onSubmit={handleSubmit}>
                 <div className="form-group mb-4">
-                    <h2 className="text-warning mb-4">Welcome to Chatclub</h2>
+                    <h2 className="text-warning mb-4">Welcome to Messaging App</h2>
                 </div>
                 <div className="form-group mb-4">
                     <input type="name" className="form-control bg-light" name="name" placeholder="Enter name" onChange={handleChange} />
