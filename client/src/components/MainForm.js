@@ -48,9 +48,10 @@ const MainForm = () => {
                 <div className="form-group mb-4">
                     <select className="form-select bg-light" name="room" aria-label="Default select example" onChange={handleChange}>
                         <option value="">Select Room</option>
-                        <option value="gaming">Gaming</option>
-                        <option value="coding">Coding</option>
-                        <option value="socialMedia">Social Media</option>
+                        <option value="Room1">Room1</option>
+                        <option value="Room2">Room2</option>
+                        <option value="Room3">Room3</option>
+                        <option value="Room4">Room4</option>
                     </select>
                 </div>
                 <button type="submit" className="btn btn-warning w-100 mb-2">Submit</button>

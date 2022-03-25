@@ -54,11 +54,13 @@ const ChatRoom = () => {
   return (
     <div className="py-4 m-5 w-50 shadow bg-white text-dark border rounded container" >
       <div className="text-center px-3 mb-4 text-capitalize">
-        <h1 className="text-warning mb-4">{data?.room} Chat Room</h1>
+        <h1 className="text-warning mb-4">{data?.room} Chat </h1>
+        
       </div>
       <div className="bg-light border rounded p-3 mb-4" style={{ height: "450px", overflowY: "scroll" }}>
         {
           allMessages.map(msg => {
+            
             return data.name === msg.name
               ?
               <div className="row justify-content-end pl-5 ">
