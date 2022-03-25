@@ -1,14 +1,13 @@
 {
-  "name": "server",
+  "name": "roomchat-be",
   "version": "1.0.0",
-  "description": "",
+  "description": "roomchat be",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start":"nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "vikram chiluka",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

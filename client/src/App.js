@@ -4,16 +4,23 @@ import {
     Routes,
     Route,
   } from "react-router-dom";
-import Join from './components/Join/Join'
-import Chat from './components/Chat/Chat'
+import ChatRoom from "./components/ChatRoom";
+import MainForm from "./components/MainForm";
+
 const App = () => {
-    return(
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Join />} />
-      <Route path="/chat" element={<Chat />} />
-    </Routes>
-  </BrowserRouter>)
+  return (
+    <div className="container-fluid  text-dark d-flex align-items-center justify-content-center" style={{ height: "100vh" }}>
+      
+     
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<MainForm />}/>
+          <Route path="/chat/:roomId" element={<ChatRoom/>} />
+          <Route path="*" element={<h1>404 Not Found</h1>} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  )
 }
 
 export default App
